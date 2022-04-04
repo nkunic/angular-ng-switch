@@ -110,7 +110,7 @@
   </div>
 
   <!-- Terminal -->
-  <div class="switch-content__terminal" [ngSwitch]="selection.value">
+  <div [ngSwitch]="selection.value" class="switch-content__terminal">
     <pre *ngSwitchDefault>Home</pre>
     <pre *ngSwitchCase="'star'">Star</pre>
     <pre *ngSwitchCase="'world'">World</pre>
